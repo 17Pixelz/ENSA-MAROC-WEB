@@ -1,29 +1,28 @@
 <?php
 
-use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Hash;
-use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\FAQController;
 use App\Http\Controllers\AuthController;
-use App\Http\Controllers\ClubController;
-use App\Http\Controllers\EnsaController;
-use App\Http\Controllers\NewsController;
-use App\Http\Controllers\UserController;
-use App\Http\Controllers\CycleController;
-use App\Http\Controllers\EventController;
-use App\Http\Controllers\ImageController;
-use App\Http\Controllers\PhoneController;
 use App\Http\Controllers\AvatarController;
+use App\Http\Controllers\ClubController;
 use App\Http\Controllers\CourseController;
-use App\Http\Controllers\ModuleController;
+use App\Http\Controllers\CycleController;
+use App\Http\Controllers\EnsaController;
+use App\Http\Controllers\EventController;
+use App\Http\Controllers\FAQController;
+use App\Http\Controllers\ImageController;
 use App\Http\Controllers\MessageController;
-use App\Http\Controllers\WebsiteController;
-use App\Http\Controllers\SemesterController;
-use App\Http\Controllers\SubModuleController;
-use App\Http\Controllers\SpecialityController;
-use App\Http\Controllers\SubscriberController;
+use App\Http\Controllers\ModuleController;
+use App\Http\Controllers\NewsController;
 use App\Http\Controllers\OpportunityController;
 use App\Http\Controllers\OrientationController;
+use App\Http\Controllers\PhoneController;
+use App\Http\Controllers\SemesterController;
+use App\Http\Controllers\SpecialityController;
+use App\Http\Controllers\SubModuleController;
+use App\Http\Controllers\SubscriberController;
+use App\Http\Controllers\UserController;
+use App\Http\Controllers\WebsiteController;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Route;
 
 /*
 |--------------------------------------------------------------------------
@@ -35,6 +34,7 @@ use App\Http\Controllers\OrientationController;
 | is assigned the "api" middleware group. Enjoy building your API!
 |
 */
+
 
 Route::domain(env('APP_URL'))->group(function () {
     Route::get('/ensa', [EnsaController::class, 'index']);
