@@ -103,7 +103,7 @@ export default {
     data() {
         const defaultForm = Object.freeze({
             modal: false,
-            date: '',
+            date: null,
             title: null,
             city: null,
             contract: null,

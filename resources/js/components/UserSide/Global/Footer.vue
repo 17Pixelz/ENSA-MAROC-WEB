@@ -165,11 +165,12 @@ export default {
 
     async mounted() {
         const { data } = await this.axios.get("/api/website");
+        /*
         console.log("==================================== website");
         console.log(data);
         console.log("==================================== cccc");
-
-        const mobilePhones = data[0].phones.filter(
+        */  
+        const mobilePhones = data[0].filter(
             (phone) => phone.type == "mobile"
         );
 
